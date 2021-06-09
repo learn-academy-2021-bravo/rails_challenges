@@ -1,0 +1,8 @@
+<h1> Blog Home Page </h1>
+
+<% @blogs.each do |blog| %>
+    <li>
+    <%= link_to blog.title, blog_path(blog) %>
+    </li>
+ <% end %>
+    <%= link_to 'post new blog', new_blog_path %> 
