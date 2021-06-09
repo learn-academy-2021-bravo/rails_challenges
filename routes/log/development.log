@@ -1,0 +1,107 @@
+  [1m[35m (622.5ms)[0m  [1m[35mCREATE DATABASE "routes_development" ENCODING = 'unicode'[0m
+  [1m[35m (291.2ms)[0m  [1m[35mCREATE DATABASE "routes_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-06-08 14:59:13 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.8ms | Allocations: 522)
+Completed 200 OK in 62ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 4215)
+
+
+Started GET "/" for ::1 at 2021-06-08 14:59:40 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 23.0ms | Allocations: 219)
+Completed 200 OK in 30ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 952)
+
+
+Started GET "/" for ::1 at 2021-06-08 15:25:26 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.4ms | Allocations: 415)
+Completed 200 OK in 40ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 3086)
+
+
+Started GET "/developer" for ::1 at 2021-06-08 15:32:59 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/rails_challenges/routes/app/controllers/restaurants_controller.rb:4: syntax error, unexpected `end'
+    end
+    ^~~
+/Users/learnacademy/Desktop/rails_challenges/routes/app/controllers/restaurants_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/restaurants_controller.rb:4: syntax error, unexpected `end'
+app/controllers/restaurants_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/restaurants_controller.rb:4: syntax error, unexpected `end'
+app/controllers/restaurants_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/restaurants_controller.rb:4: syntax error, unexpected `end'
+app/controllers/restaurants_controller.rb:8: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/developer" for ::1 at 2021-06-08 15:33:43 -0700
+Processing by RestaurantsController#developer as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/developer.html.erb within layouts/application
+  Rendered restaurants/developer.html.erb within layouts/application (Duration: 0.7ms | Allocations: 100)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails_challenges/routes/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 4195ms
+Built at: 06/08/2021 3:33:54 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 10250.6ms | Allocations: 14612)
+Completed 200 OK in 10259ms (Views: 10256.7ms | Allocations: 15845)
+
+
+Started GET "/developer" for ::1 at 2021-06-08 15:34:45 -0700
+Processing by RestaurantsController#developer as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/developer.html.erb within layouts/application
+  Rendered restaurants/developer.html.erb within layouts/application (Duration: 0.8ms | Allocations: 109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 3760)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 5004)
+
+
+Started GET "/developer" for ::1 at 2021-06-08 15:48:09 -0700
+Processing by RestaurantsController#developer as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/developer.html.erb within layouts/application
+  Rendered restaurants/developer.html.erb within layouts/application (Duration: 0.5ms | Allocations: 113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3756)
+Completed 200 OK in 18ms (Views: 16.1ms | Allocations: 4957)
+
+
