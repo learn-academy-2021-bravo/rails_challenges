@@ -765,3 +765,23 @@ Processing by MainController#topten as HTML
 Completed 200 OK in 23ms (Views: 21.6ms | Allocations: 4631)
 
 
+Started GET "/pizza" for ::1 at 2021-06-08 16:21:19 -0700
+Processing by MainController#pizza as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/pizza.html.erb within layouts/application
+  Rendered main/pizza.html.erb within layouts/application (Duration: 0.6ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3560)
+Completed 200 OK in 10ms (Views: 8.8ms | Allocations: 4287)
+
+
+Started GET "/" for ::1 at 2021-06-08 16:21:20 -0700
+Processing by MainController#topten as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/topten.html.erb within layouts/application
+  Rendered main/topten.html.erb within layouts/application (Duration: 0.2ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4131)
+Completed 200 OK in 23ms (Views: 22.8ms | Allocations: 4603)
+
+
