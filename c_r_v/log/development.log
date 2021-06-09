@@ -153,3 +153,5 @@ Processing by MainController#team as HTML
 Completed 200 OK in 2ms (Views: 1.8ms | Allocations: 506)
 
 
+  [1m[35m (31.2ms)[0m  [1m[35mCREATE DATABASE "c_r_v_development" ENCODING = 'unicode'[0m
+  [1m[35m (26.5ms)[0m  [1m[35mCREATE DATABASE "c_r_v_test" ENCODING = 'unicode'[0m
