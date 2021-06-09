@@ -1,0 +1,448 @@
+  [1m[35m (803.1ms)[0m  [1m[35mCREATE DATABASE "blog_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (345.3ms)[0m  [1m[35mCREATE DATABASE "blog_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1508658759281986305)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-06-09 20:19:21.111773"], ["updated_at", "2021-06-09 20:19:21.111773"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(1508658759281986305)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-06-09 13:19:48 -0700
+  [1m[35m (15.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.7ms | Allocations: 522)
+Completed 200 OK in 38ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 4212)
+
+
+Started GET "/" for ::1 at 2021-06-09 13:20:32 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.4ms | Allocations: 219)
+Completed 200 OK in 23ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 952)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1508658759281986305)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePosts (20210609202543)
+  [1m[36mTRANSACTION (9.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210609202543"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1508658759281986305)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/blog" for ::1 at 2021-06-09 13:59:15 -0700
+  [1m[35m (26.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:00:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:02:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/" for ::1 at 2021-06-09 14:02:58 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.3ms | Allocations: 223)
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2082)
+
+
+Started GET "/index" for ::1 at 2021-06-09 14:04:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:07:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:07:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:07:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:11:12 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/" for ::1 at 2021-06-09 14:11:17 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/learnacademy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 13.9ms | Allocations: 218)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 947)
+
+
+Started GET "/blog" for ::1 at 2021-06-09 14:11:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:11:55 -0700
+  
+NameError (undefined local variable or method `index' for main:Object):
+  
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/blog_controller.rb:1:in `<main>'
+Started GET "/index" for ::1 at 2021-06-09 14:12:38 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 31)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 706)
+
+
+Started GET "/index" for ::1 at 2021-06-09 14:18:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for ::1 at 2021-06-09 14:19:42 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 525)
+
+
+Started GET "/index" for ::1 at 2021-06-09 14:20:01 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 1.1ms | Allocations: 507)
+
+
+Started GET "/index" for ::1 at 2021-06-09 14:20:03 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.8ms | Allocations: 321)
+
+
+Started GET "/index" for ::1 at 2021-06-09 14:20:03 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.8ms | Allocations: 321)
+
+
+Started GET "/index" for ::1 at 2021-06-09 14:20:04 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 321)
+
+
+Started GET "/index" for ::1 at 2021-06-09 14:20:04 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 321)
+
+
+Started GET "/index" for ::1 at 2021-06-09 15:10:52 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 3ms (Views: 1.6ms | Allocations: 526)
+
+
+Started GET "/index" for ::1 at 2021-06-09 15:14:50 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 1.0ms | Allocations: 526)
+
+
+Started GET "/index" for ::1 at 2021-06-09 15:14:53 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 2ms (Views: 0.9ms | Allocations: 321)
+
+
+Started GET "/index" for ::1 at 2021-06-09 15:14:55 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.4ms | Allocations: 323)
+
+
+Started GET "/index" for ::1 at 2021-06-09 15:14:56 -0700
+Processing by BlogController#index as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.1ms | Allocations: 27)
+Completed 200 OK in 1ms (Views: 0.7ms | Allocations: 321)
+
+
+Started GET "/index" for ::1 at 2021-06-09 15:16:34 -0700
+Processing by BlogController#index as HTML
+Completed 500 Internal Server Error in 2ms (Allocations: 2367)
+
+
+  
+NameError (uninitialized constant BlogController::Blog
+Did you mean?  BlogApp):
+  
+app/controllers/blog_controller.rb:3:in `index'
+Started GET "/index" for ::1 at 2021-06-09 15:21:23 -0700
+Processing by BlogController#index as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 2338)
+
+
+  
+NameError (uninitialized constant BlogController::Blog
+Did you mean?  BlogApp):
+  
+app/controllers/blog_controller.rb:3:in `index'
+Started GET "/index" for ::1 at 2021-06-09 15:21:25 -0700
+Processing by BlogController#index as HTML
+Completed 500 Internal Server Error in 3ms (Allocations: 2328)
+
+
+  
+NameError (uninitialized constant BlogController::Blog
+Did you mean?  BlogApp):
+  
+app/controllers/blog_controller.rb:3:in `index'
+Started GET "/index" for ::1 at 2021-06-09 15:23:05 -0700
+Processing by BlogController#index as HTML
+Completed 500 Internal Server Error in 4ms (Allocations: 2328)
+
+
+  
+NameError (uninitialized constant BlogController::Blog
+Did you mean?  BlogApp):
+  
+app/controllers/blog_controller.rb:3:in `index'
+Started GET "/index" for ::1 at 2021-06-09 15:28:24 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4156)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4225)
+Completed 500 Internal Server Error in 21ms (Allocations: 5877)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_blog_path' for #<ActionView::Base:0x000000000165f8>):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_blog_path %> </p>
+    3: <ol>
+    4:     <% @blogs.each do |blog|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:29:16 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3988)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 4057)
+Completed 500 Internal Server Error in 12ms (Allocations: 5028)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_blog_path' for #<ActionView::Base:0x00000000017660>):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_blog_path %> </p>
+    3: <ol>
+    4:     <% @blogs.each do |blog|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:30:44 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 3988)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4057)
+Completed 500 Internal Server Error in 18ms (Allocations: 5028)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_blog_path' for #<ActionView::Base:0x000000000186c8>):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_blog_path %> </p>
+    3: <ol>
+    4:     <% @blogs.each do |blog|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:31:07 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 22.7ms | Allocations: 4182)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 4251)
+Completed 500 Internal Server Error in 29ms (Allocations: 5379)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_index_path' for #<ActionView::Base:0x00000000018a10>
+Did you mean?  index_new_path):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_index_path %> </p>
+    3: <ol>
+    4:     <% @blogs.each do |blog|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:33:49 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 4011)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4080)
+Completed 500 Internal Server Error in 13ms (Allocations: 5046)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_index_path' for #<ActionView::Base:0x00000000019b90>
+Did you mean?  index_new_path):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_index_path %> </p>
+    3: <ol>
+    4:     <% @blogs.each do |blog|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:33:53 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 4022)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4090)
+Completed 500 Internal Server Error in 14ms (Allocations: 4452)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_index_path' for #<ActionView::Base:0x00000000019e60>
+Did you mean?  index_new_path):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_index_path %> </p>
+    3: <ol>
+    4:     <% @blogs.each do |blog|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:34:23 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 4181)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4250)
+Completed 500 Internal Server Error in 24ms (Allocations: 5378)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_index_path' for #<ActionView::Base:0x0000000001a1d0>
+Did you mean?  index_new_path):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_index_path %> </p>
+    3: <ol>
+    4:     <% @index.each do |index|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:40:14 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  Rendered blog/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 4011)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4080)
+Completed 500 Internal Server Error in 18ms (Allocations: 5046)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_index_path' for #<ActionView::Base:0x0000000001b350>
+Did you mean?  new_blog_path):
+    1: <h1>Blog Application</h1>
+    2: <p> <%= link_to 'New Blog', new_index_path %> </p>
+    3: <ol>
+    4:     <% @index.each do |index|  %>
+    5:         <li>
+  
+app/views/blog/index.html.erb:2
+Started GET "/index" for ::1 at 2021-06-09 15:41:00 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mPost Load (7.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/blog/index.html.erb:4
+  Rendered blog/index.html.erb within layouts/application (Duration: 86.6ms | Allocations: 4479)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/learnacademy/Desktop/rails_challenges/blog_app/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 3633ms
+Built at: 06/09/2021 3:41:09 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9196.5ms | Allocations: 19005)
+Completed 200 OK in 9202ms (Views: 9199.6ms | ActiveRecord: 52.8ms | Allocations: 20170)
+
+
+Started GET "/index" for ::1 at 2021-06-09 15:41:25 -0700
+Processing by BlogController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/blog/index.html.erb:4
+  Rendered blog/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4303)
+Completed 200 OK in 26ms (Views: 22.7ms | ActiveRecord: 1.9ms | Allocations: 4786)
+
+
+Started GET "/index/new" for ::1 at 2021-06-09 15:42:58 -0700
+Processing by BlogController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_controller.rb:13:in `show'
+Completed 404 Not Found in 80ms (ActiveRecord: 47.0ms | Allocations: 5521)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Post with 'id'=new):
+  
+app/controllers/blog_controller.rb:13:in `show'
