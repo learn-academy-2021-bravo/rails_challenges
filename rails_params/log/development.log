@@ -1,0 +1,179 @@
+  [1m[35m (238.8ms)[0m  [1m[35mCREATE DATABASE "rails_params_development" ENCODING = 'unicode'[0m
+  [1m[35m (96.2ms)[0m  [1m[35mCREATE DATABASE "rails_params_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-06-09 09:41:37 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shazeenfabius/.gem/ruby/3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shazeenfabius/.gem/ruby/3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.6ms | Allocations: 522)
+Completed 200 OK in 28ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 4230)
+
+
+Started GET "/" for ::1 at 2021-06-09 09:41:42 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/shazeenfabius/.gem/ruby/3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/shazeenfabius/.gem/ruby/3.0.0/gems/railties-6.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.7ms | Allocations: 219)
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 953)
+
+
+Started GET "/posts" for ::1 at 2021-06-09 09:41:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+Started GET "/pages/1" for ::1 at 2021-06-09 09:41:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/pages/1"):
+  
+Started GET "/params/shaz" for ::1 at 2021-06-09 09:41:54 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"name"=>"shaz"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Volumes/storage/LEARN/week_6/rails_challenges/rails_params/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e332c6419728fac579d5
+Version: webpack 4.46.0
+Time: 1314ms
+Built at: 06/09/2021 9:41:56 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f826770d917d8a37c1d8.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f826770d917d8a37c1d8.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 2893.3ms | Allocations: 14618)
+Completed 200 OK in 2899ms (Views: 2896.9ms | ActiveRecord: 0.0ms | Allocations: 15852)
+
+
+Started GET "/params/shaz" for ::1 at 2021-06-09 09:42:20 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"name"=>"shaz"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3785)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 5029)
+
+
+Started GET "/params/shaz" for ::1 at 2021-06-09 09:46:44 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"name"=>"shaz"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3508)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4144)
+
+
+Started GET "/params/vivean" for ::1 at 2021-06-09 09:46:48 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"name"=>"vivean"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3462)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3917)
+
+
+Started GET "/params/vivean" for ::1 at 2021-06-09 09:51:05 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"integer"=>"vivean"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6309)
+Completed 200 OK in 23ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 9494)
+
+
+Started GET "/params/vivean" for ::1 at 2021-06-09 09:51:10 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"integer"=>"vivean"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3464)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3924)
+
+
+Started GET "/params/3" for ::1 at 2021-06-09 09:51:12 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"integer"=>"3"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 41)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 3464)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 3915)
+
+
+Started GET "/params/vivean" for ::1 at 2021-06-09 09:51:18 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"integer"=>"vivean"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3468)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3925)
+
+
+Started GET "/params/" for ::1 at 2021-06-09 09:51:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/params"):
+  
+Started GET "/params/shaz" for ::1 at 2021-06-09 09:51:24 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"integer"=>"shaz"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3466)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3917)
+
+
+Started GET "/params/string" for ::1 at 2021-06-09 09:51:25 -0700
+Processing by ParameterController#index as HTML
+  Parameters: {"integer"=>"string"}
+  Rendering layout layouts/application.html.erb
+  Rendering parameter/index.html.erb within layouts/application
+  Rendered parameter/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 42)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3462)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3913)
+
+
