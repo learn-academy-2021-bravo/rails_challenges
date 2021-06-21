@@ -1,0 +1,6 @@
+Rails.application.routes.draw do
+  get '/index' => 'blog#index', as: 'index'
+  get '/blogs/new' => 'blog#new', as: 'new_blog'
+  get '/blogs/:id' => 'blog#show', as: 'blog'
+  post '/blogs' => 'blog#create'
+  end
