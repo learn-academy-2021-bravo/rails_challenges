@@ -1,0 +1,17 @@
+<h1>Rating App</h1>
+
+<p>The Dvelopers are:</p>
+<% @developers.each do |dev|%>
+    <p> <%= dev %> </p>
+<%end%>
+<h2> Top 10 Restaurants in San Diego </h2>
+<%= link_to @rest_one, "https://www.dijamara.com"%>
+<br>
+<%= link_to @rest_two, "https://www.seabasstropub.com"%>
+<br>
+<%= link_to @rest_three, "https://www.jeune-jolie.com"%>
+<br>
+<%= link_to @rest_four, "https://www.thisiscampfire.com"%>
+<br>
+<%= link_to @rest_five, "https://marketdelmar.com"%>
+
