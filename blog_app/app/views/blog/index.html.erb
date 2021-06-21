@@ -1,0 +1,10 @@
+<h1>Blog Application</h1>
+<p> <%= link_to 'New Blog', new_blog_path %> </p>
+<ol>
+    <% @index.each do |index|  %>
+        <li>
+            <%= index.title %>
+        </li>
+        
+    <% end %>
+</ol>
